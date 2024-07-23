@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFBB"
+    tools:context=".Sueldo" >
+
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="---------------------"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:id="@+id/textViewC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Cargo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="-------------------"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0000FF" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textViewE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sueldo Basico: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 0.00"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0000FF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" >
+
+        <TextView
+            android:id="@+id/textViewH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neto a Cobrar:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0000FF" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="retornar"
+        android:text="Retornar " />
+
+</RelativeLayout>
